@@ -1,0 +1,65 @@
+package main
+
+import "fmt"
+
+func main(){
+
+var n int
+fmt.Print( " Digite o número de jogos: \n " )
+fmt.Scan( &n )
+
+for i := 0; i < n; i++ {
+	var(
+		pub int
+		pop, geral, arq, cad, renda float32
+	)
+
+//Entrada
+
+//Público
+
+	fmt.Print( " Digite o público: \n " )
+	fmt.Scan( &pub )
+
+// Ingressos: popular
+
+	fmt.Print( " Digite o perdentual de popular: \n " )
+	fmt.Scan( &pop )
+	pop = float32( pub ) * pop
+
+// Ingresso: geral
+
+	fmt.Print( " Digite o percentual de geral: \n ")
+	fmt.Scan( &geral )
+	geral = (float32( pub ) * geral) * 5
+
+// Ingresso: arquibancada
+
+	fmt.Print( " Digite o percentual de arquibancada: \n ")
+	fmt.Scan( &arq )
+	arq = (float32( pub ) * arq ) * 10
+
+// Ingresso: cadeira
+
+	fmt.Print( " Digite o percentual de cadeiras: \n ")
+	fmt.Scan( &cad )
+	cad = (float32( pub) * cad ) * 20
+
+// Renda total
+
+    renda = pop + geral + arq + cad
+
+// Saída
+
+    fmt.Printf( " A renda do jogo é = %.2f", renda )
+
+
+
+
+
+
+
+	
+}
+
+}
