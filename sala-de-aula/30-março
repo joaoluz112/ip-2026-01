@@ -1,0 +1,37 @@
+package main
+
+import "fmt"
+
+func main() {
+	var nota = [3]float64{}
+	var media float64
+
+	fmt.Println(" Insira as notas do aluno: ")
+	fmt.Scan(&nota[0], &nota[1], &nota[2])
+
+	for i := 0; i < 3; i++ {
+		media = (nota[0] + nota[1] + nota[2]) / 3
+		fmt.Printf("A %d nota é: %.1f \n", i+1, nota[i])
+	}
+
+	fmt.Printf("A média do aluno é %.1f \n", media)
+
+	if nota[0] >= 6 {
+		fmt.Printf(" A nota %.1f está acima da média \n", nota[0])
+	} else {
+		fmt.Printf(" A nota %.1f está abaixo da média \n", nota[0])
+	}
+
+	if nota[1] >= 6 {
+		fmt.Printf(" A nota %.1f está acima da média \n", nota[1])
+	} else {
+		fmt.Printf(" A nota %.1f está abaixo da média \n", nota[1])
+	}
+
+	if nota[2] >= 6 {
+		fmt.Printf(" A nota %.1f está acima da média \n", nota[2])
+	} else {
+		fmt.Printf(" A nota %.1f está abaixo da média \n", nota[2])
+	}
+
+}
