@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+// O FATORIAL DE UM NÚMERO
 func main() {
 
 	var n1 int
